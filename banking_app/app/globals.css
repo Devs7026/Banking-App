@@ -45,7 +45,7 @@
 
 @layer utilities {
   .input-class {
-    @apply text-16 placeholder:text-16 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500;
+    @apply text-base placeholder:text-base rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500;
   }
 
   .sheet-content button {
@@ -53,7 +53,7 @@
   }
 
   .text14_padding10 {
-    @apply text-14 px-4 py-2.5 font-semibold;
+    @apply text-sm px-4 py-2.5 font-semibold;
   }
 
   .flex-center {
@@ -61,7 +61,7 @@
   }
 
   .header-2 {
-    @apply text-18 font-semibold text-gray-900;
+    @apply text-lg font-semibold text-gray-900;
   }
 
   .text-10 {
@@ -69,27 +69,27 @@
   }
 
   .text-12 {
-    @apply text-[12px] leading-[16px];
+    @apply text-xs leading-[16px];
   }
 
   .text-14 {
-    @apply text-[14px] leading-[20px];
+    @apply text-sm leading-[20px];
   }
 
   .text-16 {
-    @apply text-[16px] leading-[24px];
+    @apply text-base leading-[24px];
   }
 
   .text-18 {
-    @apply text-[18px] leading-[22px];
+    @apply text-lg leading-[22px];
   }
 
   .text-20 {
-    @apply text-[20px] leading-[24px];
+    @apply text-xl leading-[24px];
   }
 
   .text-24 {
-    @apply text-[24px] leading-[30px];
+    @apply text-2xl leading-[30px];
   }
 
   .text-26 {
@@ -97,11 +97,11 @@
   }
 
   .text-30 {
-    @apply text-[30px] leading-[38px];
+    @apply text-3xl leading-[38px];
   }
 
   .text-36 {
-    @apply text-[36px] leading-[44px];
+    @apply text-4xl leading-[44px];
   }
 
   /* Home */
