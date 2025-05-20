@@ -11,7 +11,7 @@ const AnimatedCounter = ({ amount }: { amount: number }) => {
     if (!counter) return
 
     const target = amount
-    const duration = 2000 // 2 seconds
+    const duration = 1000 
     const start = 0
     const increment = target / (duration / 16) // 60fps
 
