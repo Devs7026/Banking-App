@@ -2,7 +2,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React, { useState } from 'react'
-
+import { signUp } from '@/lib/actions/user.actions'
+import { signIn } from '@/lib/actions/user.actions'
 
 
 import { z } from "zod"
@@ -50,19 +51,19 @@ const AuthForm = ({type}: {type: string}) => {
     try {
      //sign up wiht Appwrite  & create  plaid token
      if(type === 'sign-up'){
-      // const newUser= await signUp(data);
+      const newUser= await signUp(data);
 
 
       // setUser(newUser);
      }
      if(type === 'sign-in'){
-      // const response = await signIn({
-      //   email: data.email,
-      //   password: data.password,
-      // })
-      // if(response){
-      //   router.push('/');
-      // }
+      const response = await signIn({
+        email: data.email,
+        password: data.password,
+      })
+      if(response){
+        router.push('/');
+      }
      }
     } catch (error) {
       console.log(error);
